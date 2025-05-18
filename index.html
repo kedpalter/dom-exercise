@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tấn Đạt | Bài tập DOM</title>
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+
+<body>
+    <section class="container w-screen h-screen bg-cyan-50 mx-auto">
+        <div class="content border rounded-lg w-3/5 mx-auto bg-white shadow-5-strong">
+            <!--Pills navigation-->
+            <div class="flex items-start">
+                <ul class="me-4 flex list-none flex-col flex-wrap ps-0" role="tablist" data-twe-nav-ref>
+                    <li role="presentation" class="flex-grow text-center">
+                        <a href="#pills-bai1"
+                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                            id="pills-bai-tab01" data-twe-toggle="pill" data-twe-target="#pills-bai1" data-twe-nav-active
+                            role="tab" aria-controls="pills-bai1" aria-selected="true">BÀI 1</a>
+                    </li>
+                    <li role="profile" class="flex-grow text-center">
+                        <a href="#pills-bai2"
+                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                            id="pills-bai-tab02" data-twe-toggle="pill" data-twe-target="#pills-bai2" role="tab"
+                            aria-controls="pills-bai2" aria-selected="false">BÀI 2</a>
+                    </li>
+                    <li role="contact" class="flex-grow text-center">
+                        <a href="#pills-bai3"
+                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                            id="pills-bai-tab03" data-twe-toggle="pill" data-twe-target="#pills-bai3" role="tab"
+                            aria-controls="pills-bai3" aria-selected="false">BÀI 3</a>
+                    </li>
+                    <li role="contact" class="flex-grow text-center">
+                        <a href="#pills-bai4"
+                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                            id="pills-bai-tab04" data-twe-toggle="pill" data-twe-target="#pills-bai4" role="tab"
+                            aria-controls="pills-bai4" aria-selected="false">BÀI 4</a>
+                    </li>
+                    <li role="contact" class="flex-grow text-center">
+                        <a href="#pills-bai5"
+                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                            id="pills-bai-tab05" data-twe-toggle="pill" data-twe-target="#pills-bai5" role="tab"
+                            aria-controls="pills-bai5" aria-selected="false">BÀI 5</a>
+                    </li>
+                </ul>
+
+                <!--Pills content-->
+                <div class="my-2">
+                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-bai1" role="tabpanel" aria-labelledby="pills-bai-tab01" data-twe-tab-active>
+                        Nội dung bài 1
+                        <h1>💰 Tính tiền lương nhân viên</h1>
+                        <div class="border rounded-xs shadow-5-strong border-l-3 border-l-cyan-400">
+                            <h3>💡Gợi ý</h3>
+                            <p>Công thức: Lương = Lương 1 ngày * số ngày làm<br>Kiến thức áp dụng:</p>
+                            <ul class="list-disc ml-4">
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>                     
+                        </div>
+                        <form action="#">
+                            <input type="number" placeholder="Nhập lương 1 ngày" class="inset-shadow-sm inset-shadow-indigo-500 bg-indigo-50" id="tienLuong">
+                            <input type="number" placeholder="Số ngày làm" class="border" id="soNgay">
+                            <button type="submit" class="border px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300" onclick="tinhLuong()">Tính lương</button>
+                        </form>
+                        <div class="result-box w-full h-[60px] bg-[var(--result-box)] flex items-center">
+                            <h3>👉</h3>
+                            <p class="result1" id="result1"></p>
+                        </div>
+                    </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-bai2" role="tabpanel" aria-labelledby="pills-bai-tab02">
+                        Nội dung bài 2
+                        <h1>💱 Quy đổi tiền</h1>
+                        <div class="border rounded-xs shadow-5-strong border-l-3 border-l-cyan-400">
+                            <h3>💡Gợi ý</h3>
+                            <p>Kiến thức áp dụng:</p>
+                            <ul class="list-disc ml-4">
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                                <li>Xử lý ép kiểu dữ liệu</li>
+                            </ul>                     
+                        </div>
+                        <form action="#">
+                            <input type="number" placeholder="Nhập số thứ 1" class="border">
+                            <input type="number" placeholder="Nhập số thứ 2" class="border">
+                            <input type="number" placeholder="Nhập số thứ 3" class="border">
+                            <input type="number" placeholder="Nhập số thứ 4" class="border">
+                            <input type="number" placeholder="Nhập số thứ 5" class="border">
+                            <button type="submit" class="border px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300">Tính lương</button>
+                        </form>
+                        <div class="result-box w-full h-[60px] bg-[var(--result-box)] flex items-center">
+                            <h3>👉</h3>
+                            <p class="result1">Kết quả bài 2</p>
+                        </div>
+                    </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-bai3" role="tabpanel" aria-labelledby="pills-bai-tab03">
+                        Nội dung bài 3
+                    </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-bai4" role="tabpanel" aria-labelledby="pills-bai-tab04">
+                        Nội dung bài 4
+                    </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-bai5" role="tabpanel" aria-labelledby="pills-bai-tab05">
+                        Nội dung bài 5
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+
+    <script src="./src/Js/index.js"></script>
+    <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>
