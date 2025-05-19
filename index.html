@@ -11,112 +11,206 @@
 
 <body>
     <section class="container w-screen h-screen bg-cyan-50 mx-auto">
-        <div class="content border rounded-lg w-3/5 mx-auto bg-white shadow-5-strong">
+        <div class="content rounded-lg w-4/5 mx-auto bg-white shadow-5-strong">
             <!--Pills navigation-->
-            <div class="flex items-start">
-                <ul class="me-4 flex list-none flex-col flex-wrap ps-0" role="tablist" data-twe-nav-ref>
-                    <li role="presentation" class="flex-grow text-center">
-                        <a href="#pills-bai1"
-                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
-                            id="pills-bai-tab01" data-twe-toggle="pill" data-twe-target="#pills-bai1" data-twe-nav-active
-                            role="tab" aria-controls="pills-bai1" aria-selected="true">BÀI 1</a>
-                    </li>
-                    <li role="profile" class="flex-grow text-center">
-                        <a href="#pills-bai2"
-                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
-                            id="pills-bai-tab02" data-twe-toggle="pill" data-twe-target="#pills-bai2" role="tab"
-                            aria-controls="pills-bai2" aria-selected="false">BÀI 2</a>
-                    </li>
-                    <li role="contact" class="flex-grow text-center">
-                        <a href="#pills-bai3"
-                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
-                            id="pills-bai-tab03" data-twe-toggle="pill" data-twe-target="#pills-bai3" role="tab"
-                            aria-controls="pills-bai3" aria-selected="false">BÀI 3</a>
-                    </li>
-                    <li role="contact" class="flex-grow text-center">
-                        <a href="#pills-bai4"
-                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
-                            id="pills-bai-tab04" data-twe-toggle="pill" data-twe-target="#pills-bai4" role="tab"
-                            aria-controls="pills-bai4" aria-selected="false">BÀI 4</a>
-                    </li>
-                    <li role="contact" class="flex-grow text-center">
-                        <a href="#pills-bai5"
-                            class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
-                            id="pills-bai-tab05" data-twe-toggle="pill" data-twe-target="#pills-bai5" role="tab"
-                            aria-controls="pills-bai5" aria-selected="false">BÀI 5</a>
-                    </li>
-                </ul>
+            <div class="flex items-start justify-between">
+                <div class="sidenav w-1/4 h-fit me-4 flex list-none flex-col flex-wrap bg-[#ECF0F3]">
+                    <ul class="" role="tablist" data-twe-nav-ref>
+                        <li role="presentation" class="flex-grow text-center mx-3 shadow-black">
+                            <a href="#pills-bai1"
+                                class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight before:content-['📒'] text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 data-[twe-nav-active]:before:content-['📖'] dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                                id="pills-bai-tab01" data-twe-toggle="pill" data-twe-target="#pills-bai1"
+                                data-twe-nav-active role="tab" aria-controls="pills-bai1" aria-selected="true">BÀI
+                                1</a>
+                        </li>
+                        <li role="profile" class="flex-grow text-center mx-3 shadow-black">
+                            <a href="#pills-bai2"
+                                class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight before:content-['📒'] text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 data-[twe-nav-active]:before:content-['📖'] dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                                id="pills-bai-tab02" data-twe-toggle="pill" data-twe-target="#pills-bai2" role="tab"
+                                aria-controls="pills-bai2" aria-selected="false">BÀI 2</a>
+                        </li>
+                        <li role="contact" class="flex-grow text-center mx-3 shadow-black">
+                            <a href="#pills-bai3"
+                                class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight before:content-['📒'] text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 data-[twe-nav-active]:before:content-['📖'] dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                                id="pills-bai-tab03" data-twe-toggle="pill" data-twe-target="#pills-bai3" role="tab"
+                                aria-controls="pills-bai3" aria-selected="false">BÀI 3</a>
+                        </li>
+                        <li role="contact" class="flex-grow text-center mx-3 shadow-black">
+                            <a href="#pills-bai4"
+                                class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight before:content-['📒'] text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 data-[twe-nav-active]:before:content-['📖'] dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                                id="pills-bai-tab04" data-twe-toggle="pill" data-twe-target="#pills-bai4" role="tab"
+                                aria-controls="pills-bai4" aria-selected="false">BÀI 4</a>
+                        </li>
+                        <li role="contact" class="flex-grow text-center mx-3 shadow-black">
+                            <a href="#pills-bai5"
+                                class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight before:content-['📒'] text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 data-[twe-nav-active]:before:content-['📖'] dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500"
+                                id="pills-bai-tab05" data-twe-toggle="pill" data-twe-target="#pills-bai5" role="tab"
+                                aria-controls="pills-bai5" aria-selected="false">BÀI 5</a>
+                        </li>
+                    </ul>
+                </div>
+
 
                 <!--Pills content-->
-                <div class="my-2">
+                <div class="my-2 w-3/4">
+                    <div class="p-4 rounded-xs shadow-5-strong border-l-3 border-l-[var(--note-border)] mx-5">
+                        <h3 class="font-bold text-base">❗ Đây chỉ là gợi ý nên người làm có thể làm khác gợi ý, miễn
+                            đúng theo yêu
+                            cầu trong file đề bài</h3>
+                    </div>
                     <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-bai1" role="tabpanel" aria-labelledby="pills-bai-tab01" data-twe-tab-active>
-                        Nội dung bài 1
-                        <h1>💰 Tính tiền lương nhân viên</h1>
-                        <div class="border rounded-xs shadow-5-strong border-l-3 border-l-cyan-400">
-                            <h3>💡Gợi ý</h3>
+                        <h1 class="text-2xl my-4 ml-5">💰 Tính tiền lương nhân viên</h1>
+                        <div class="p-4 rounded-xs shadow-5-strong border-l-3 border-l-[var(--hint-border)] mx-5">
+                            <h3 class="font-bold">💡Gợi ý</h3>
                             <p>Công thức: Lương = Lương 1 ngày * số ngày làm<br>Kiến thức áp dụng:</p>
-                            <ul class="list-disc ml-4">
+                            <ul class="list-disc ml-10 my-5">
                                 <li>Tìm tới thẻ và lấy giá trị</li>
                                 <li>Tạo hàm cơ bản</li>
                                 <li>Gắn sự kiện click cho button</li>
                                 <li>Thay đổi nội dung cho thẻ</li>
                                 <li>Xử lý load trang với button của form</li>
-                            </ul>                     
+                            </ul>
                         </div>
-                        <form action="#">
-                            <input type="number" placeholder="Nhập lương 1 ngày" class="inset-shadow-sm inset-shadow-indigo-500 bg-indigo-50" id="tienLuong">
-                            <input type="number" placeholder="Số ngày làm" class="border" id="soNgay">
-                            <button type="submit" class="border px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300" onclick="tinhLuong()">Tính lương</button>
+                        <form action="#" class="ml-6">
+                            <input type="number" placeholder="Nhập lương 1 ngày"
+                                class="w-[120px] h-9 inset-shadow-sm inset-shadow-indigo-500 bg-indigo-50 my-4 rounded-lg mr-5"
+                                id="tienLuong">
+                            <input type="number" placeholder="Số ngày làm"
+                                class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500"
+                                id="soNgay">
+                            <button type="submit"
+                                class="block px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300"
+                                onclick="tinhLuong()">Tính lương</button>
                         </form>
-                        <div class="result-box w-full h-[60px] bg-[var(--result-box)] flex items-center">
-                            <h3>👉</h3>
-                            <p class="result1" id="result1"></p>
+                        <div class="result-box h-[60px] bg-[var(--result-box)] flex items-center my-5 mx-4 rounded-xs">
+                            <h3 class="ml-5">👉</h3>
+                            <p class="result1" id="result1">0</p>
                         </div>
                     </div>
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-bai2" role="tabpanel" aria-labelledby="pills-bai-tab02">
-                        Nội dung bài 2
-                        <h1>💱 Quy đổi tiền</h1>
-                        <div class="border rounded-xs shadow-5-strong border-l-3 border-l-cyan-400">
-                            <h3>💡Gợi ý</h3>
+                        <h1 class="text-2xl my-4 ml-5">📚 Tính giá trị trung bình</h1>
+                        <div class="p-4 rounded-xs shadow-5-strong border-l-3 border-l-cyan-400 mx-5">
+                            <h3 class="font-bold">💡Gợi ý</h3>
                             <p>Kiến thức áp dụng:</p>
-                            <ul class="list-disc ml-4">
+                            <ul class="list-disc ml-10 my-5">
                                 <li>Tìm tới thẻ và lấy giá trị</li>
                                 <li>Tạo hàm cơ bản</li>
                                 <li>Gắn sự kiện click cho button</li>
                                 <li>Thay đổi nội dung cho thẻ</li>
                                 <li>Xử lý load trang với button của form</li>
                                 <li>Xử lý ép kiểu dữ liệu</li>
-                            </ul>                     
+                            </ul>
                         </div>
-                        <form action="#">
-                            <input type="number" placeholder="Nhập số thứ 1" class="border">
-                            <input type="number" placeholder="Nhập số thứ 2" class="border">
-                            <input type="number" placeholder="Nhập số thứ 3" class="border">
-                            <input type="number" placeholder="Nhập số thứ 4" class="border">
-                            <input type="number" placeholder="Nhập số thứ 5" class="border">
-                            <button type="submit" class="border px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300">Tính lương</button>
+                        <form action="#" class="ml-6">
+                            <div class="flex w-4/5 gap-5 flex-wrap">
+                                <input type="number" placeholder="Nhập số thứ 1"
+                                    class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500"
+                                    id="soThu1">
+                                <input type="number" placeholder="Nhập số thứ 2"
+                                    class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500"
+                                    id="soThu2">
+                                <input type="number" placeholder="Nhập số thứ 3"
+                                    class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500"
+                                    id="soThu3">
+                                <input type="number" placeholder="Nhập số thứ 4"
+                                    class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500"
+                                    id="soThu4">
+                                <input type="number" placeholder="Nhập số thứ 5"
+                                    class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500"
+                                    id="soThu5">
+                            </div>
+                            <button type="submit"
+                                class="block px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300 my-5"
+                                onclick="tinhTrungBinh()">Tính trung bình</button>
                         </form>
-                        <div class="result-box w-full h-[60px] bg-[var(--result-box)] flex items-center">
-                            <h3>👉</h3>
-                            <p class="result1">Kết quả bài 2</p>
+                        <div class="result-box h-[60px] bg-[var(--result-box)] flex items-center my-5 mx-4 rounded-xs">
+                            <h3 class="ml-5">👉</h3>
+                            <p class="result2" id="result2">0</p>
                         </div>
                     </div>
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-bai3" role="tabpanel" aria-labelledby="pills-bai-tab03">
-                        Nội dung bài 3
+                        <h1 class="text-2xl my-4 ml-5">💱 Quy đổi tiền</h1>
+                        <div class="p-4 rounded-xs shadow-5-strong border-l-3 border-l-cyan-400 mx-5">
+                            <h3 class="font-bold">💡Gợi ý</h3>
+                            <p>Kiến thức áp dụng:</p>
+                            <ul class="list-disc ml-10 my-5">
+                                <li>Áp dụng các kiến thức như bài 1 và 2</li>
+                                <li>Giá USD mặc định 1 USD = 24900</li>
+                                <li>Có thể dùng thêm NumberFormat để số tiền hiển thị đẹp hơn: <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat"
+                                        target="_blank">NumberFormat</a><br>VD: new
+                                    Intl.NumberFormat('vn-VN').format(24900); => 24,900</li>
+                            </ul>
+                        </div>
+                        <form action="#" class="ml-6">
+                            <input type="number" placeholder="Nhập số tiền"
+                                class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500 mt-5"
+                                id="soTien">
+                            <button type="submit"
+                                class="block px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300 my-5"
+                                onclick="quyDoiTien()">Quy đổi tiền</button>
+                        </form>
+                        <div class="result-box h-[60px] bg-[var(--result-box)] flex items-center my-5 mx-4 rounded-xs">
+                            <h3 class="ml-5">👉</h3>
+                            <p class="result3" id="result3">0</p>
+                        </div>
                     </div>
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-bai4" role="tabpanel" aria-labelledby="pills-bai-tab04">
-                        Nội dung bài 4
+                        <h1 class="text-2xl my-4 ml-5">📏 Tính diện tích, chu vi hình chữ nhật</h1>
+                        <div class="p-4 rounded-xs shadow-5-strong border-l-3 border-l-cyan-400 mx-5">
+                            <h3 class="font-bold">💡Gợi ý</h3>
+                            <p>Kiến thức áp dụng:</p>
+                            <ul class="list-disc ml-10 my-5">
+                                <li>Áp dụng các kiến thức như bài trước</li>
+                                <li>Diện tích: dài x rộng</li>
+                                <li>Chu vi: (dài + rộng) x 2</li>
+                            </ul>
+                        </div>
+                        <form action="#" class="ml-6">
+                            <input type="number" placeholder="Nhập chiều dài"
+                                class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500 mt-5"
+                                id="chieuDai">
+                            <input type="number" placeholder="Nhập chiều rộng"
+                                class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500 mt-5 ml-5"
+                                id="chieuRong">
+                            <button type="submit"
+                                class="block px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300 my-5"
+                                onclick="tinhToan()">Tính</button>
+                        </form>
+                        <div class="result-box h-[60px] bg-[var(--result-box)] flex items-center my-5 mx-4 rounded-xs">
+                            <h3 class="ml-5">👉</h3>
+                            <p class="result4" id="result4">0</p>
+                        </div>
                     </div>
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-bai5" role="tabpanel" aria-labelledby="pills-bai-tab05">
-                        Nội dung bài 5
+                        <h1 class="text-2xl my-4 ml-5">🧮 Tính tổng 2 ký số</h1>
+                        <div class="p-4 rounded-xs shadow-5-strong border-l-3 border-l-cyan-400 mx-5">
+                            <h3 class="font-bold">💡Gợi ý</h3>
+                            <p>Kiến thức áp dụng:</p>
+                            <ul class="list-disc ml-10 my-5">
+                                <li>Áp dụng cách tính như demo tổng 3 ký số trên lớp</li>
+                            </ul>
+                        </div>
+                        <form action="#" class="ml-6">
+                            <input type="number" placeholder="Nhập số có 2 chữ số"
+                                class="w-[120px] h-9 rounded-lg bg-indigo-50 inset-shadow-sm inset-shadow-indigo-500 mt-5"
+                                id="so2ChuSo">
+                            <button type="submit"
+                                class="block px-7 h-[40px] rounded-[20px] cursor-pointer text-white bg-[var(--button-color)] hover:scale-95 duration-300 my-5"
+                                onclick="tongKyso()">Tính tổng</button>
+                        </form>
+                        <div class="result-box h-[60px] bg-[var(--result-box)] flex items-center my-5 mx-4 rounded-xs">
+                            <h3 class="ml-5">👉</h3>
+                            <p class="result5" id="result5">0</p>
+                        </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </section>
 

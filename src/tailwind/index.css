@@ -1,6 +1,7 @@
 /* Khi code -> code css ở folder tailwind, khi sử dụng thì sử dụng tại folder css */
 @import "tailwindcss";
-@config "../../tailwind.config.js"; /* Config tailwind để custom cấu hình */
+@config "../../tailwind.config.js";
+/* Config tailwind để custom cấu hình */
 
 :root {
     --button-color: #4B70E2;
